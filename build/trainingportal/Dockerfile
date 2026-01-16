@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:25.3.0-alpine3.23
 
 RUN apk --no-cache add --update g++ gcc libgcc libstdc++ linux-headers make jpeg-dev cairo-dev giflib-dev pango-dev
 RUN apk --no-cache add --update python3 && ln -sf python3 /usr/bin/python
